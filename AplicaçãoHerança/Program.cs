@@ -27,6 +27,8 @@ internal class Program
         Coordenador coordenador1 = new Coordenador("Samuel Braz dos Santos", "123.456.789-00", "MG-12.345.678", "30 anos", new Logradouro("Rua A", "Centro", "Cidade X"), "123", "Apto 101", "Mestre", 10000, "AbcBolinhas");
         listapessoas.Add(coordenador1);
 
+        TecnicoAdministrativo tecnico1 = new TecnicoAdministrativo("Samuel Braz dos Santos", "123.456.789-00", "MG-12.345.678", "30 anos", new Logradouro("Rua A", "Centro", "Cidade X"), "123", "Apto 101", "2023001", 3000, "Suporte Técnico");
+        listapessoas.Add(tecnico1);
             
 
         ListarPessoas(listapessoas);
