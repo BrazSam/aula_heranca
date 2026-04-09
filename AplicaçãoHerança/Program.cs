@@ -1,7 +1,7 @@
 ﻿using ClassesHerança;
 internal class Program
 {
-
+    //Samuel Braz dos Santos
     List<Pessoa> listapessoas = new List<Pessoa>();
 
     public Program()
