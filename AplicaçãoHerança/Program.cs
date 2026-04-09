@@ -24,11 +24,14 @@ internal class Program
         listapessoas.Add(professor1);
         listapessoas.Add(professor2);
 
-        Coordenador coordenador1 = new Coordenador("Samuel Braz dos Santos", "123.456.789-00", "MG-12.345.678", "30 anos", new Logradouro("Rua AbcBolinhas", "Bairro Centro", "Cidade Lages"), "123", "Apto 101", "Mestre", 10000, "AbcBolinhas");
+        Coordenador coordenador1 = new Coordenador("Samuel Braz dos Santos", "123.456.789-00", "MG-12.345.678", "30 anos", new Logradouro("Rua AbcBolinhas", "Centro", "Cidade Lages"), "123", "Apto 101", "Mestre", 10000, "AbcBolinhas");
         listapessoas.Add(coordenador1);
 
+        
         TecnicoAdministrativo tecnico1 = new TecnicoAdministrativo("Samuel Braz dos Santos", "123.456.789-00", "MG-12.345.678", "30 anos", new Logradouro("Rua AbcBolinhas", "Centro", "Cidade Lages"), "123", "Apto 101", "2023001", 3000, "Suporte Técnico");
+        TecnicoAdministrativo tecnico2 = new TecnicoAdministrativo("Ana Oliveira", "222.333.444-55", "MG-22.333.444", "35 anos", new Logradouro("Rua E", "Bairro X", "Cidade W"), "654", "Casa", "2023002", 3500, "Administração");
         listapessoas.Add(tecnico1);
+        listapessoas.Add(tecnico2);
             
 
         ListarPessoas(listapessoas);
@@ -38,6 +41,7 @@ internal class Program
         {
             foreach (var pessoa in pessoas)
             {
+                Console.WriteLine($"Tipo: {pessoa.GetType().Name}"); //usando o get type para mostrar o tipo de pessoa
                 Console.WriteLine($"Nome: {pessoa.Nome}");
                 Console.WriteLine($"CPF: {pessoa.Cpf}");
                 Console.WriteLine($"RG: {pessoa.Rg}");
