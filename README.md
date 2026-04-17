@@ -2,7 +2,7 @@
 
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Em-Desenvolvimento-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-EmDesenvolvimento-blue?style=for-the-badge)
 
 > 📚 **Aula 8 - Introdução ao conceito de Herança em Programação Orientada a Objetos**
 
