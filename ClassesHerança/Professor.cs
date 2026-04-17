@@ -16,4 +16,26 @@ public class Professor : Funcionario
             Titulacao = titulacao;
             AreaAtuacao = areaAtuacao;
         }
+
+        // Implementação do método abstrato RetornarDados() da classe base Pessoa :)
+        public override List<(string campo, string valor)> RetornarDados()
+        {
+            return new List<(string campo, string valor)>
+            {
+                ("Nome", Nome),
+                ("Cpf", Cpf),
+                ("Rg", Rg),
+                ("Idade", Idade), 
+                
+                // Atributos específicos de Funcionário/Professor:
+                ("Titulacao", Titulacao),
+                ("Área de Atuação", AreaAtuacao)
+            };
+        }
+
+        //polimorfismo
+        public override string ToString()
+        {
+            return $"{Nome} - {Matricula} - {Titulacao} - {AreaAtuacao}";
+        }
 }

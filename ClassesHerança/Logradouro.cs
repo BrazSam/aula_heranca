@@ -20,4 +20,10 @@ public class Logradouro
             Estado = estado;
             CEP = cep;
         }
+
+    //polimorfismo
+    public override string ToString()
+        {
+            return $"{Nome}, {Cidade} - {Estado}";
+        }
 }

@@ -1,6 +1,6 @@
 namespace ClassesHerança;
 
-public class Funcionario : Pessoa
+public abstract class Funcionario : Pessoa
 {
     public string Matricula {get; set;}
     public decimal Salario {get; set;}

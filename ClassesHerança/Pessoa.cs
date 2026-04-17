@@ -1,6 +1,6 @@
 namespace ClassesHerança;
 
-public class Pessoa
+public abstract class Pessoa
 {
     public string Nome {get; set;}
     public string Cpf {get; set;}
@@ -9,6 +9,9 @@ public class Pessoa
     public Logradouro Endereco {get; set;} //ASSOCIAÇÃO com a classe Logradouro
     public string Numero {get; set;}
     public string Complemento {get; set;}
+    
+    // método abstrato, não tem implementação, deve ser implementado nas classes derivadas
+    public abstract List<(string campo,string valor)> RetornarDados();
 
 
 //construtor com parametros OPCIONAIS para facilitar a criação de objetos Pessoa

@@ -14,4 +14,27 @@ public class Aluno : Pessoa
             Matricula = matricula;
             Curso = curso;
         }
+
+    public override List<(string campo, string valor)> RetornarDados()
+        {
+            // Cria e retorna uma lista contendo os pares de informações do aluno
+            return new List<(string campo, string valor)>
+            {
+                ("Nome", Nome),
+                ("Cpf", Cpf),
+                ("Rg", Rg),
+                ("Idade", Idade),
+                
+                // Atributos específicos do Aluno:
+                ("Matricula", Matricula),
+                ("Curso Nome", Curso.Nome), 
+                ("Curso Código", Curso.Codigo) 
+            };
+        }   
+
+        //polimorfismo: 
+    public override string ToString()
+        {
+            return $"{Nome} - {Matricula}";
+        }    
 }

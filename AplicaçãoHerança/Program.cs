@@ -6,11 +6,13 @@ internal class Program
 
     public Program()
     {
+        /*Retirando por conta do abstract na classe:
         Pessoa pessoa1 = new Pessoa("Samuel Braz dos Santos", "123.456.789-00", "MG-12.345.678", "30 anos", new Logradouro("Rua AbcBolinhas", "Centro", "Cidade Lages"), "123", "Apto 101");
-        listapessoas.Add(pessoa1);
+        listapessoas.Add(pessoa1); */
 
+        /*Retirando por conta do abstract na classe:
         Funcionario funcionario1 = new Funcionario("Samuel Braz dos Santos", "123.456.789-00", "MG-12.345.678", "30 anos", new Logradouro("Rua AbcBolinhas", "Centro", "Cidade Lages"), "123", "Apto 101", "2023001", 3000);
-        listapessoas.Add(funcionario1);
+        listapessoas.Add(funcionario1);*/
 
         Aluno aluno1 = new Aluno("Samuel Braz dos Santos", "123.456.789-00", "MG-12.345.678", "30 anos", new Logradouro("Rua AbcBolinhas", "Centro", "Cidade Lages"), "123", "Apto 101", "2023001", new Curso { Nome = "Sistemas de Informação" });
         Aluno aluno2 = new Aluno("Maria Silva", "987.654.321-00", "MG-87.654.321", "25 anos", new Logradouro("Rua B", "Bairro Y", "Cidade Z"), "456", "Casa", "2023002", new Curso { Nome = "Engenharia de Software" });

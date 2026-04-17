@@ -13,4 +13,25 @@ public class Coordenador : Funcionario
             //atribui os valores dos parametros aos atributos da classe Coordenador
             SenhaAlarme = senhaAlarme;
         }
+
+        public override List<(string campo, string valor)> RetornarDados()
+        {
+            return new List<(string campo, string valor)>
+            {
+                ("Nome", Nome),
+                ("Cpf", Cpf),
+                ("Rg", Rg),
+                ("Idade", Idade), 
+                
+                // Atributos específicos de Funcionário/Coordenador:
+                ("Matricula", Matricula),
+                ("Salário", Salario.ToString("C")), // Formata o salário como moeda até tentei fazer sem mas parece q é obrigatorio
+                ("Senha Alarme", SenhaAlarme)
+            };
+        }
+
+        public override string ToString()
+        {
+            return $"{Nome} - {Matricula}";
+        }
 }

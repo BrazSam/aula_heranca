@@ -13,4 +13,25 @@ public class TecnicoAdministrativo : Funcionario
             //atribui os valores dos parametros aos atributos da classe TecnicoAdministrativo
             Funcao = funcao;
         }
+    public override List<(string campo, string valor)> RetornarDados()
+        {
+            return new List<(string campo, string valor)>
+            {
+                ("Nome", Nome),
+                ("Cpf", Cpf),
+                ("Rg", Rg),
+                ("Idade", Idade), 
+                
+                // Atributos específicos de Funcionário/Técnico Administrativo:
+                ("Matricula", Matricula),
+                ("Salário", Salario.ToString("C")), // Formata o salário como moeda
+                ("Função", Funcao)
+            };
+        }
+
+        //polimorfismo
+        public override string ToString()
+        {
+            return $"{Nome} - {Matricula} - {Funcao}";
+        }
 }

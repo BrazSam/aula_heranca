@@ -16,4 +16,10 @@ public class Curso : Object //a classe Curso herda implicitamente da classe Obje
             Descricao = descricao;
             Codigo = codigo;
         }
+    
+    //polimorfismo
+    public override string ToString()
+        {
+            return $"{Codigo} - {Nome}, {CargaHoraria}";
+        }
 }
